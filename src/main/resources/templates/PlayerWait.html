@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Player</title>
+</head>
+<body>
+    <h3> wait until the inviter start the game then press "start" button</h3>
+    <form th:action="@{/start/player/{gameName}/{player}(gameName=${game.name}, player=${game.player})}" method="get">
+        <input type="submit" value="Start"/><br/>
+    </form>
+    <h5 style="color: red;" th:text="${message.value}"></h5>
+</body>
+</html>

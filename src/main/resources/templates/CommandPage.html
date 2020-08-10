@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Enjoy</title>
+</head>
+<body>
+    <div style="float:left">
+        <form th:action="@{/play/{gameName}/{player}(gameName=${game.name}, player=${game.player})}" method="post">
+            Command: <input type="text" th:field="${command.value}"/>
+            <input type="submit" value="Enter">
+        </form>
+    </div>
+
+    <div style="float:left; margin-left:10px">
+        <form th:action="@{/quit/{gameName}/{player}(gameName=${game.name}, player=${game.player})}" method="get">
+            <input type="submit" value="Quit"/>
+        </form>
+    </div>
+
+    <div style="clear: both" th:each="r : ${result}" th:text="${r.value}">
+    </div>
+
+</body>
+</html>

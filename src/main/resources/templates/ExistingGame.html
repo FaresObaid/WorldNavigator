@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Exiting Game</title>
+</head>
+<body>
+    <h3>your name must be unique</h3>
+    <form action="/wait/existing" method="post">
+        Maze: <input type="text" th:field="${game.name}"/><br/><br/>
+        Player: <input type="text" th:field="${game.player}"/><br/><br/>
+        <input type="submit" value="Enter existing game"/>
+    </form>
+    <h5 style="color: red;" th:text="${message.value}"></h5>
+</body>
+</html>

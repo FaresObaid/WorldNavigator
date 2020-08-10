@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New Game</title>
+</head>
+<body>
+    <h3> you must create your game with unique name</h3>
+    <form action="/wait/new" method="post">
+        Maze: <input type="text" th:field="${game.name}"/><br/><br/>
+        Player: <input type="text" th:field="${game.player}"/><br/><br/>
+        <input type="submit" value="Create new game"/>
+    </form>
+    <h5 style="color: red;" th:text="${message.value}"></h5>
+</body>
+</html>

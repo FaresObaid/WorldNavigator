@@ -1,0 +1,104 @@
+{
+	"rooms":
+	[
+		{
+			"id": 0,
+			"light": true,
+			"walls": [
+				{
+					"@type": "paintingWithOneKey",
+					"hidden": true,
+					"key": "key1"
+				},{
+					"@type": "door",
+					"passage": {
+						"id":1,
+						"side1": 0,
+						"side2": 1,
+						"key": "key1"
+					}
+				},{
+					"@type": "seller",
+					"goods": [
+						{
+							"item": {
+								"@item": "key",
+								"name": "key1"
+							},
+							"amount": 10
+						},{
+							"item": {
+								"@item": "key",
+								"name": "key2"
+							},
+							"amount": 10
+						}
+					]
+				},{
+					"@type": "chestNoKeyOneItem",
+					"contents": {
+						"item": {
+							"@item": "gold",
+							"amount": 10
+						}
+					}
+				}
+			]
+		},{
+			"id": 1,
+			"light": true,
+			"walls": [
+				{
+					"@type": "door",
+					"passage": {
+						"id":3,
+						"side1": 1,
+						"side2": 3,
+						"key": "NoKey"
+					}
+				},{
+					"@type": "chestNoKeyOneItem",
+					"contents": {
+						"item": {
+							"@item": "key",
+							"name": "key2"
+						}
+					}
+				},{
+					"@type": "door",
+					"passage": {
+						"id":2,
+						"side1": 1,
+						"side2": 2,
+						"key": "key2"
+					}
+				},{
+					"@type": "door",
+					"passage": 1
+				}
+			]
+		},{
+			"id": 2,
+			"light": false,
+			"walls": [
+
+			]
+		},{
+			"id": 3,
+			"light": true,
+			"walls": [
+				{
+					"@type": "emptyWall"
+				},
+				{
+					"@type": "emptyWall"
+				},{
+					"@type": "door",
+					"passage": 3
+				},{
+					"@type": "emptyWall"
+				}
+			]
+		}
+	]
+}

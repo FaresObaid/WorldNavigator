@@ -1,0 +1,15 @@
+{
+  "rooms" : [ {
+    "roomID" : 0,
+    "numberOfWalls" : 4,
+    "lightOn" : false
+  }, {
+    "roomID" : 1,
+    "numberOfWalls" : 4,
+    "lightOn" : false
+  }, {
+    "roomID" : 2,
+    "numberOfWalls" : 0,
+    "lightOn" : false
+  } ]
+}

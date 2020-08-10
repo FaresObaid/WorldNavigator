@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+    <h3> wait until all of your friends log in to the game, and then press "start" button to start it</h3>
+    <form th:action="@{/start/admin/{gameName}/{player}(gameName=${game.name}, player=${game.player})}" method="get">
+        <input type="submit" value="Start"/><br/>
+    </form>
+
+</body>
+</html>
