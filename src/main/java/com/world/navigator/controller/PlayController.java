@@ -50,7 +50,7 @@ public class PlayController {
         try {
             arena.process(game, player, command.getValue());
         }catch(Exception e){
-            arena.process(game, player, "there is a bug in source code, shame on the programmer");
+            arena.process(game, player, "there is a bug in source code");
         }
         return "redirect:/play/"+ game + "/" + player;
     }
