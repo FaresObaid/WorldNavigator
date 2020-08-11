@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class MainClass {
     public static void main(String[] args) throws IOException {
-        File file = new File("firstjson.json");
+        File file = new File("first.json");
         ObjectMapper objectMapper = new ObjectMapper();
 
         Maze maze = objectMapper.readValue(file, Maze.class);

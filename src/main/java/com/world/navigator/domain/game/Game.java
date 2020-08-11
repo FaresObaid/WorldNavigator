@@ -38,7 +38,7 @@ public class Game {
     }
 
     public void createMaze(){
-        File file = new File("firstjson.json");
+        File file = new File("first.json");
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             maze = objectMapper.readValue(file, Maze.class);
